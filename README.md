@@ -7,4 +7,4 @@ import flask
 pip install flask
 
 import dotenv
-npm install dotenv --save
+pip install python-dotenv
