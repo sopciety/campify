@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
+
 const PageContainer = styled.div`
   text-align: center;
   min-height: 100vh;
@@ -22,7 +23,7 @@ const Title = styled.h1`
   letter-spacing: 2px;
   text-transform: uppercase;
   animation: fadeIn 2s ease-in-out;
-
+  font-family: "jsMath-cmbx10", sans-serif;
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -40,6 +41,7 @@ const SubTitle = styled.h2`
   font-weight: 500;
   margin-bottom: 30px;
   opacity: 0.9;
+  font-family: "jsMath-cmbx10", sans-serif;
 `;
 
 const BackButton = styled.button`
@@ -52,6 +54,7 @@ const BackButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(255, 107, 107, 0.3);
+  font-family: "jsMath-cmbx10", sans-serif;
 
   &:hover {
     transform: scale(1.1);

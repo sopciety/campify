@@ -1,81 +1,72 @@
-/* src/App.css */
-body {
+/* General styling for the entire page */
+body, html {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  padding: 0;
+  height: 100%;
 }
 
-.App-header {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-  min-height: 100vh;
+.App-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100vh; /* Full viewport height */
+  background-color: #1ED760; /* Set a green background */
+  color: #fff;
+  font-family: "jsMath-cmbx10", sans-serif;
   text-align: center;
-  padding: 20px;
+}
+
+.App-header h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: white;
   animation: fadeIn 1.5s ease-in-out;
 }
 
+/* Add animation for fading in */
 @keyframes fadeIn {
   from {
     opacity: 0;
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
-h1 {
-  font-size: 3rem;
-  margin: 20px 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-.dynamic-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 15px;
-  border: 5px solid white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.dynamic-image:hover {
-  transform: scale(1.05);
-}
-
+/* Style for the button container */
 .button-container {
-  margin-top: 30px;
-  display: flex;
-  gap: 15px;
+  margin-top: 20px;
 }
 
 button {
-  padding: 12px 20px;
-  font-size: 1rem;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   font-weight: bold;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
   color: white;
-  background: #2575fc;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #6a11cb;
-  transform: translateY(-3px);
+  background-color: #1ed760;
+  transform: scale(1.05);
 }
 
 button:active {
-  transform: translateY(1px);
+  background-color: #1aa34a;
 }
 
-footer {
-  margin-top: 50px;
+/* Style for the footer */
+.footer {
+  margin-top: 20px;
   font-size: 0.9rem;
-  color: #777;
+  color: white;
+  opacity: 0.8;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }

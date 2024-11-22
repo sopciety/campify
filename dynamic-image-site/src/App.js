@@ -14,9 +14,7 @@ function App() {
         <Route path="/green" element={<GreenPage />} />
         <Route path="/blue" element={<BluePage />} />
       </Routes>
-      <footer>
-  <p>Made by Sophia Shaw, Sophia Zhang, Heather Nguyen, & Jyoti Maharjan</p>
-</footer>
+
     </Router>
   );
 }
