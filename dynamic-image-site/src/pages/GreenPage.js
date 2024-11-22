@@ -5,7 +5,7 @@ import styled from "styled-components";
 const PageContainer = styled.div`
   text-align: center;
   min-height: 100vh;
-  background-color: green;
+  background-color: #0C4767;
   color: white;
   display: flex;
   flex-direction: column;
