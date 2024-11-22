@@ -63,8 +63,8 @@ class SpotifyHandler:
             raise Exception("Token info not found in session. User needs to log in again.")
 
         token_info = session['token_info']
-        if self.auth_manager.is_token_expired(token_info):
+        if self.sp.auth_manager.is_token_expired(token_info):
             print("Token expired. Refreshing...")
-            token_info = self.auth_manager.refresh_access_token(token_info['refresh_token'])
+            token_info = self.sp.auth_manager.refresh_access_token(token_info['refresh_token'])
             session['token_info'] = token_info
         return token_info

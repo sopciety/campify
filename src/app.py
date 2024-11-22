@@ -107,7 +107,7 @@ def profile():
                 </style>
             </head>
             <body>
-                <h1>Your Music Profile</h1>
+                <h1>Your Campify Profile</h1>
                 <h2>Energy Level: {user_profile['energy'] * 100:.1f}%</h2>
                 <div class="meter">
                     <div class="meter-fill"></div>
